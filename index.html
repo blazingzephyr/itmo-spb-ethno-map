@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Многонациональный Петербург — интерактивная карта</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="map-container">
+        <div id="map"></div>
+        
+        <div class="layer-control">
+            <h4>🏛️ Национальные общины</h4>
+            <label>
+                <input type="checkbox" id="toggle-german" checked> 
+                <span class="german-label">● Немцы</span>
+            </label>
+            <label>
+                <input type="checkbox" id="toggle-jewish" checked> 
+                <span class="jewish-label">● Евреи</span>
+            </label>
+            <label>
+                <input type="checkbox" id="toggle-finnish" checked> 
+                <span class="finnish-label">● Финны</span>
+            </label>
+            <label>
+                <input type="checkbox" id="toggle-tatar" checked> 
+                <span class="tatar-label">● Татары</span>
+            </label>
+            <label>
+                <input type="checkbox" id="toggle-armenian" checked> 
+                <span class="armenian-label">● Армяне</span>
+            </label>
+            <label>
+                <input type="checkbox" id="toggle-estonian" checked> 
+                <span class="estonian-label">● Эстонцы</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h2>Петербург многоликий</h2>
+        <p>Санкт-Петербург с момента основания был городом многих народов и вероисповеданий. Каждая община внесла неоценимый вклад в архитектуру, науку, ремёсла и культуру Северной столицы.</p>
+        
+        <div id="sidebar-german" class="community-block">
+            <h3 style="color: #4B0082;">🇩🇪 Немецкое наследие</h3>
+            <p>Немцы составляли значительную часть населения Петербурга на протяжении трёх веков. Архитекторы, врачи, аптекари, учёные и ремесленники — их следы повсюду: от лютеранских церквей до особняков на Английской набережной. Петришуле, старейшая школа города, была основана именно немецкой общиной.</p>
+        </div>
+        
+        <div id="sidebar-jewish" class="community-block">
+            <h3 style="color: #008B8B;">✡️ Еврейское наследие</h3>
+            <p>Несмотря на ограничения черты оседлости, еврейская интеллигенция, купечество и деятели искусства играли важную роль в жизни столицы. Величественная Хоральная синагога — одна из крупнейших в Европе — свидетельство расцвета общины в начале XX века.</p>
+        </div>
+        
+        <div id="sidebar-finnish" class="community-block">
+            <h3 style="color: #1E3A8A;">🇫🇮 Финны и ингерманландцы</h3>
+            <p>Коренное население Ингерманландии, финны веками жили на берегах Невы. В XIX веке они массово перебирались в столицу, работая извозчиками, трубочистами, молочницами. Их духовным центром была церковь Св. Марии. В советское время община сильно пострадала от репрессий, но сегодня возрождается.</p>
+        </div>
+        
+        <div id="sidebar-tatar" class="community-block">
+            <h3 style="color: #2E7D32;">☪️ Татарская община</h3>
+            <p>Татары — одна из старейших нерусских групп города. До революции они занимались торговлей и ремёслами, жили компактно в Московской и Адмиралтейской частях. Соборная мечеть на Кронверкском стала архитектурной жемчужиной и центром мусульманской жизни. Сегодня татарская культура сохраняется благодаря активной общине.</p>
+        </div>
+        
+        <div id="sidebar-armenian" class="community-block">
+            <h3 style="color: #B45309;">🇦🇲 Армянская община</h3>
+            <p>Армяне появились в Петербурге вскоре после его основания. При поддержке семьи Лазаревых были возведены церкви Св. Екатерины на Невском и Св. Воскресения на Смоленке, открыта типография. Петербург стал крупным центром арменоведения. Община всегда отличалась высокой долей интеллигенции.</p>
+        </div>
+        
+        <div id="sidebar-estonian" class="community-block">
+            <h3 style="color: #4B5563;">🇪🇪 Эстонская община</h3>
+            <p>Эстонцы начали переселяться в столицу в конце XVIII века, а после реформ 1860-х их число резко выросло. Работали в основном на фабриках и в услужении. В городе действовали эстонские школы, общества трезвости и благотворительные организации. Петербург сыграл важную роль в развитии эстонской национальной культуры.</p>
+        </div>
+        
+        <div class="note">
+            <strong>📌 Как пользоваться картой</strong><br>
+            Используйте переключатели справа на карте, чтобы показать или скрыть объекты общин. Текст в боковой панели также будет скрываться или появляться.
+        </div>
+        <p style="margin-top: 20px; font-size: 0.85em; color: #777;">Карта составлена на основе открытых исторических источников.</p>
+    </div>
+
+    <script src="leaflet/leaflet-src.js"></script>
+    <script src="src.js"></script>
+    </body>
+</html>

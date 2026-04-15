@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    display: flex;
+    height: 100vh;
+}
+.custom-marker-icon {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.sidebar {
+    width: 340px;
+    background: #f9f3f0;
+    padding: 25px 20px;
+    overflow-y: auto;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.05);
+    border-left: 1px solid #e0d6d0;
+}
+.sidebar h2 {
+    font-size: 1.6em;
+    color: #3a2c27;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #c4b4ab;
+    padding-bottom: 10px;
+}
+.sidebar h3 {
+    color: #5a4a42;
+    margin: 20px 0 10px;
+}
+.sidebar p {
+    line-height: 1.7;
+    color: #3a2c27;
+    margin: 0 0 15px;
+}
+.sidebar .note {
+    font-style: italic;
+    background: #fff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border-left: 4px solid #8A2BE2;
+    margin-top: 20px;
+}
+
+.community-block {
+    transition: opacity 0.2s;
+}
+
+.map-container {
+    flex: 1;
+    position: relative;
+}
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+.layer-control {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+    font-family: 'Arial', sans-serif;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+.layer-control h4 {
+    margin: 0 0 12px 0;
+    color: #333;
+    text-align: center;
+}
+.layer-control label {
+    display: block;
+    margin: 8px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+.layer-control input {
+    margin-right: 8px;
+    accent-color: #8A2BE2;
+}
+
+.german-label { color: #4B0082; font-weight: bold; }
+.jewish-label { color: #008B8B; font-weight: bold; }
+.finnish-label { color: #1E3A8A; font-weight: bold; }
+.tatar-label { color: #2E7D32; font-weight: bold; }
+.armenian-label { color: #B45309; font-weight: bold; }
+.estonian-label { color: #4B5563; font-weight: bold; }
+
+.popup-content {
+    font-family: 'Georgia', serif;
+    max-width: 280px;
+}
+.popup-content h3 {
+    margin: 0 0 8px 0;
+    border-bottom: 1px solid #dda0dd;
+    padding-bottom: 4px;
+}
+.popup-content p {
+    margin: 5px 0;
+}
+.popup-content .address {
+    font-style: italic;
+    color: #555;
+}
+
+.popup-image {
+    max-width: 200px
+}
+
+.german-popup h3 { color: #8A2BE2; border-bottom-color: #d8bfd8; }
+.jewish-popup h3 { color: #008B8B; border-bottom-color: #b0e0e0; }
+.finnish-popup h3 { color: #1E3A8A; border-bottom-color: #93C5FD; }
+.tatar-popup h3 { color: #2E7D32; border-bottom-color: #A5D6A7; }
+.armenian-popup h3 { color: #B45309; border-bottom-color: #FDE68A; }
+.estonian-popup h3 { color: #4B5563; border-bottom-color: #D1D5DB; }
