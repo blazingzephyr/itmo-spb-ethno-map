@@ -97,9 +97,12 @@ body {
 .armenian-label { color: #B45309; font-weight: bold; }
 .estonian-label { color: #4B5563; font-weight: bold; }
 
+.leaflet-popup {
+    width: 500px;
+}
 .popup-content {
     font-family: 'Georgia', serif;
-    max-width: 280px;
+    width: 475px;
 }
 .popup-content h3 {
     margin: 0 0 8px 0;
