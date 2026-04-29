@@ -51,8 +51,11 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     // Создание необходимых маркеров на карте.
     for (const obj of objects) {
+        const popup = L.popup({ maxWidth: 1000 })
+            .setContent(createPopupContent(obj.title, obj.address, obj.description, obj.image, obj.type))
+
         L.marker(obj.coordinates, { icon: icons[obj.type] })
-         .bindPopup(createPopupContent(obj.title, obj.address, obj.description, obj.image, obj.type))
+         .bindPopup(popup)
          .addTo(groups[obj.type]);
     }
 
