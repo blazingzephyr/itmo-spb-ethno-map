@@ -87,7 +87,14 @@ document.addEventListener('DOMContentLoaded', async function() {
         setupToggle('toggle-' + type, groups[type], 'sidebar-' + type);
     }
 
-    setupToggle('toggle-text', groups, 'sidebar');
-
     L.control.scale({imperial: false, metric: true}).addTo(map);
+
+    // Логика скрытия/появления боковой панели
+    const toggleButton = document.getElementById('sidebar-toggle');
+    const sidebar = document.getElementById('sidebar');
+
+    toggleButton.addEventListener('click', function() {
+        sidebar.classList.toggle('hidden');
+        map.invalidateSize();
+    });
 });
