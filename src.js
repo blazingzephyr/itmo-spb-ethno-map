@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     // Базовый слой карты.
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
         prefix: false,
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>'
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>, &copy; <a href="https://www.citywalls.ru/">Citywalls</a>'
     }).addTo(map);
     
     // Чтение данных о национальностях из JSON-базы.
@@ -80,6 +80,8 @@ document.addEventListener('DOMContentLoaded', async function() {
         groups[type].addTo(map);
         setupToggle('toggle-' + type, groups[type], 'sidebar-' + type);
     }
+
+    setupToggle('toggle-text', groups, 'sidebar');
 
     L.control.scale({imperial: false, metric: true}).addTo(map);
 });
