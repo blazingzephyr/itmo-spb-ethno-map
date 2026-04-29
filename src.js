@@ -91,10 +91,15 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     // Логика скрытия/появления боковой панели
     const toggleButton = document.getElementById('sidebar-toggle');
+    const note = document.getElementById('sidebar-note');
     const sidebar = document.getElementById('sidebar');
 
     toggleButton.addEventListener('click', function() {
         sidebar.classList.toggle('hidden');
         map.invalidateSize();
+    });
+
+    note.addEventListener('click', function() {
+        note.classList.toggle('hidden');
     });
 });

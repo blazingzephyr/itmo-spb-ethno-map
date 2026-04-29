@@ -61,7 +61,7 @@ body {
     border-left: 4px solid #8A2BE2;
     margin-top: 20px;
 }
-.sidebar.hidden {
+.hidden {
     display: none;
 }
 /* Стили кнопки скрытия панели */
