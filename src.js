@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', async function() {
         return `
             <div class="popup-content ${type}-popup">
                 <h3 style="color: ${nationalities[type].color};">📍 ${title}</h3>
-                <hr style="border-top: 1px ${nationalities[type].color};">
                 <p class="address">${address}</p>
                 <div class="popup-flexbox">
                     <div>
@@ -48,7 +47,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                     <div class="popup-space"></div>
                     <div>
                         ${extraInfo ? '<p>' + extraInfo + '</p>' : ''}
-                        <hr style="border-top: 1px dashed ${nationalities[type].color};">
+                        <hr style="border-top: 2px groove ${nationalities[type].color};">
                         <p><i>${nationalities[type].name} Санкт-Петербурга</i></p>
                     </div>
                 </div>

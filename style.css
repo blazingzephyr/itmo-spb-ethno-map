@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'antikvarika';
+    src: url('/itmo-spb-ethno-map/font/antikvarika-default-cyrillic.ttf');
+}
+@font-face {
+    font-family: 'antikvarika';
+    src: url('/itmo-spb-ethno-map/font/antikvarika.ttf');
+}
+@font-face {
+    font-family: 'isabella-decor';
+    src: url('/itmo-spb-ethno-map/font/isabella-decor.ttf');
+}
+
 * {
     box-sizing: border-box;
 }
@@ -21,6 +34,7 @@ body {
     overflow-y: auto;
     box-shadow: -2px 0 10px rgba(0,0,0,0.05);
     border-left: 1px solid #e0d6d0;
+    font-family: 'petersburg';
 }
 .sidebar h2 {
     font-size: 1.6em;
@@ -70,7 +84,8 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.15);
     z-index: 1000;
-    font-family: 'Arial', sans-serif;
+    font-family: 'isabella-decor';
+    font-size: 18px;
     max-height: 80vh;
     overflow-y: auto;
 }
@@ -83,7 +98,6 @@ body {
     display: block;
     margin: 8px 0;
     cursor: pointer;
-    font-size: 15px;
 }
 .layer-control input {
     margin-right: 8px;
@@ -106,11 +120,14 @@ body {
 }
 .popup-content h3 {
     margin: 0 0 8px 0;
-    border-bottom: 1px solid #dda0dd;
+    border-bottom: 2px solid;
     padding-bottom: 4px;
+    font-family: 'antikvarika';
+    font-style: normal;
 }
 .popup-content p {
     margin: 5px 0;
+    font-family: 'antikvarika';
 }
 .popup-content .address {
     font-style: italic;
