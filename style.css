@@ -63,7 +63,7 @@ body {
 
 .layer-control {
     position: absolute;
-    top: 20px;
+    bottom: 30px;
     right: 20px;
     background: white;
     padding: 15px 20px;
@@ -98,11 +98,11 @@ body {
 .estonian-label { color: #4B5563; font-weight: bold; }
 
 .leaflet-popup {
-    width: 500px;
+    width: 1200px;
 }
 .popup-content {
     font-family: 'Georgia', serif;
-    width: 475px;
+    width: 1150px;
 }
 .popup-content h3 {
     margin: 0 0 8px 0;
@@ -116,9 +116,16 @@ body {
     font-style: italic;
     color: #555;
 }
+.popup-flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+.popup-space {
+    width: 20%;
+}
 
 .popup-image {
-    max-width: 200px
+    max-height: 500px
 }
 
 .german-popup h3 { color: #8A2BE2; border-bottom-color: #d8bfd8; }

@@ -39,19 +39,26 @@ document.addEventListener('DOMContentLoaded', async function() {
         return `
             <div class="popup-content ${type}-popup">
                 <h3 style="color: ${nationalities[type].color};">📍 ${title}</h3>
-                <img class="popup-image" src="${image}"></img>
                 <hr style="border-top: 1px ${nationalities[type].color};">
                 <p class="address">${address}</p>
-                ${extraInfo ? '<p>' + extraInfo + '</p>' : ''}
-                <hr style="border-top: 1px dashed ${nationalities[type].color};">
-                <p><i>${nationalities[type].name} Санкт-Петербурга</i></p>
+                <div class="popup-flexbox">
+                    <div>
+                        <img class="popup-image" src="${image}"></img>
+                    </div>
+                    <div class="popup-space"></div>
+                    <div>
+                        ${extraInfo ? '<p>' + extraInfo + '</p>' : ''}
+                        <hr style="border-top: 1px dashed ${nationalities[type].color};">
+                        <p><i>${nationalities[type].name} Санкт-Петербурга</i></p>
+                    </div>
+                </div>
             </div>
         `;
     }
 
     // Создание необходимых маркеров на карте.
     for (const obj of objects) {
-        const popup = L.popup({ maxWidth: 1000 })
+        const popup = L.popup({ maxWidth: 1200 })
             .setContent(createPopupContent(obj.title, obj.address, obj.description, obj.image, obj.type))
 
         L.marker(obj.coordinates, { icon: icons[obj.type] })
