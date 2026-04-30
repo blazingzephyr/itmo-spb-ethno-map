@@ -164,7 +164,8 @@ body {
 }
 
 .popup-image {
-    max-height: 500px
+    max-height: 500px;
+    max-width: 600px;
 }
 
 .german-popup h3 { color: #8A2BE2; border-bottom-color: #d8bfd8; }
