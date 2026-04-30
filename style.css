@@ -127,11 +127,11 @@ body {
 }
 
 .german-label { color: #4B0082; font-weight: bold; }
-.jewish-label { color: #008B8B; font-weight: bold; }
-.finnish-label { color: #1E3A8A; font-weight: bold; }
+.jewish-label { color: #F2008D; font-weight: bold; }
+.finnish-label { color: #3567F2; font-weight: bold; }
 .tatar-label { color: #2E7D32; font-weight: bold; }
 .armenian-label { color: #B45309; font-weight: bold; }
-.estonian-label { color: #4B5563; font-weight: bold; }
+.estonian-label { color: #EBD917; font-weight: bold; }
 
 .leaflet-popup {
     width: 1200px;
@@ -169,8 +169,8 @@ body {
 }
 
 .german-popup h3 { color: #8A2BE2; border-bottom-color: #d8bfd8; }
-.jewish-popup h3 { color: #008B8B; border-bottom-color: #b0e0e0; }
-.finnish-popup h3 { color: #1E3A8A; border-bottom-color: #93C5FD; }
+.jewish-popup h3 { color: #F2008D; border-bottom-color: #e89fc9; }
+.finnish-popup h3 { color: #3567F2; border-bottom-color: #93C5FD; }
 .tatar-popup h3 { color: #2E7D32; border-bottom-color: #A5D6A7; }
 .armenian-popup h3 { color: #B45309; border-bottom-color: #FDE68A; }
-.estonian-popup h3 { color: #4B5563; border-bottom-color: #D1D5DB; }
+.estonian-popup h3 { color: #EBD917; border-bottom-color: #E0CC86; }

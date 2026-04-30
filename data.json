@@ -6,11 +6,11 @@
         },
         "jewish": {
             "name": "Евреи",
-            "color": "#008B8B"
+            "color": "#F2008D"
         },
         "finnish": {
             "name": "Финны",
-            "color": "#1E3A8A"
+            "color": "#3567F2"
         },
         "tatar": {
             "name": "Татары",
@@ -22,7 +22,7 @@
         },
         "estonian": {
             "name": "Эстонцы",
-            "color": "#4B5563"
+            "color": "#EBD917"
         }
     },
     "points": [
