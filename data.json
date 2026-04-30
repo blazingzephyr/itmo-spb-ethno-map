@@ -2,27 +2,27 @@
     "nationalities": {
         "german": {
             "name": "Немцы",
-            "color": "#8A2BE2"
+            "color": "#6F2884"
         },
         "jewish": {
             "name": "Евреи",
-            "color": "#F2008D"
+            "color": "#BFBD4C"
         },
         "finnish": {
             "name": "Финны",
-            "color": "#3567F2"
+            "color": "#1B76BB"
         },
         "tatar": {
             "name": "Татары",
-            "color": "#2E7D32"
+            "color": "#009948"
         },
         "armenian": {
             "name": "Армяне",
-            "color": "#B45309"
+            "color": "#EA7125"
         },
         "estonian": {
             "name": "Эстонцы",
-            "color": "#EBD917"
+            "color": "#D50D3C"
         }
     },
     "points": [
